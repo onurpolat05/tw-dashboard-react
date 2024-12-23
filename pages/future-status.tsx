@@ -5,6 +5,7 @@ import SolutionSection from '@/components/solution/SolutionSection';
 import FeaturesDashboard from '@/components/features/FeaturesDashboard';
 import { Card } from '@/components/ui/card';
 import { LineChart, Target, TrendingUp, Puzzle, BarChart, Store, Layers, Settings, PieChart, Scale, Trophy, DollarSign, Brain, Rocket, Network, Building2, Blocks, Calendar, Users, Megaphone, ArrowUpRight, AlertTriangle, Sparkles, Box, Package, TrendingDown, Calculator } from 'lucide-react';
+import Image from 'next/image';
 
 const FutureStatus = () => {
   return (
@@ -36,6 +37,7 @@ const FutureStatus = () => {
               <TabsTrigger value="traction">Traction & Validation</TabsTrigger>
               <TabsTrigger value="financials">Financial Projections</TabsTrigger>
               <TabsTrigger value="team">Team</TabsTrigger>
+              <TabsTrigger value="call-to-action">Call to Action</TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
@@ -2324,7 +2326,447 @@ const FutureStatus = () => {
               </Card>
             </TabsContent>
 
-            {/* Other tabs will be implemented similarly */}
+            {/* Team Tab */}
+            <TabsContent value="team" className="space-y-6">
+              {/* Key Team Members Section */}
+              <Card className="p-6 bg-[#F8F8F8]">
+                <div className="space-y-6">
+                  {/* Header Section */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl font-semibold text-[#20152E]">
+                        Key Team Members: Experienced Leadership Driving Growth
+                      </h2>
+                      <p className="text-lg text-[#20152E]">
+                        Highlighting the Expertise and Commitment of the TradeWizz Team
+                      </p>
+                    </div>
+                    <p className="text-gray-600 max-w-3xl mx-auto">
+                      The TradeWizz team comprises experienced professionals with a diverse range of skills in e-commerce, technology, and business development. This section introduces the core team members driving the company's vision and execution.
+                    </p>
+                  </div>
+
+                  {/* Team Members Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* Team Member 1 */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-col items-center space-y-4">
+                        <div className="relative w-[150px] h-[150px]">
+                          <Image
+                            src="/tw-profile-photo-Ilhan.jpg"
+                            alt="Ilhan Sarigol"
+                            width={150}
+                            height={150}
+                            className="rounded-full object-cover border-2 border-[#4ADE80]/20"
+                          />
+                        </div>
+                        <div className="text-center space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Ilhan Sarigol</h3>
+                          <p className="text-[#4ADE80] font-medium">Founder & CEO</p>
+                          <p className="text-sm text-gray-600">
+                            A serial entrepreneur with over 10 years of experience in the e-commerce industry. Ilhan brings extensive knowledge of online marketplaces, digital marketing, and business strategy. Proven track record in online retail, managing a $10 million turnover on Amazon, demonstrating expertise in scaling e-commerce operations.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Team Member 2 */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-col items-center space-y-4">
+                        <div className="relative w-[150px] h-[150px]">
+                          <Image
+                            src="/tw-profile-photo-Ozan.png"
+                            alt="Ozan Goren"
+                            width={150}
+                            height={150}
+                            className="rounded-full object-cover border-2 border-[#4ADE80]/20"
+                          />
+                        </div>
+                        <div className="text-center space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Ozan Goren</h3>
+                          <p className="text-[#4ADE80] font-medium">Co-Founder & CTO</p>
+                          <p className="text-sm text-gray-600">
+                            A seasoned software engineer and technology leader with expertise in AI, machine learning, and cloud computing. Ozan is responsible for the development and implementation of the TradeWizz platform. 15 years of experience in software development, specializing in creating scalable and efficient systems.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Team Member 3 */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-col items-center space-y-4">
+                        <div className="relative w-[150px] h-[150px]">
+                          <Image
+                            src="/tw-profile-photo-Aydin.png"
+                            alt="Aydin Yildirim"
+                            width={150}
+                            height={150}
+                            className="rounded-full object-cover border-2 border-[#4ADE80]/20"
+                          />
+                        </div>
+                        <div className="text-center space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Aydin Yildirim</h3>
+                          <p className="text-[#4ADE80] font-medium">Head of Marketing</p>
+                          <p className="text-sm text-gray-600">
+                            A digital marketing expert with a proven track record of driving customer acquisition and brand growth. Aydin leads TradeWizz's marketing and sales strategies. 6 years of experience in digital marketing, with a focus on customer acquisition and brand development.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Team Stats */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Combined Experience</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">31+ Years</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Industry Expertise</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">E-commerce</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Team Growth</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">300%</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Projects Completed</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">50+</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Expertise Section */}
+              <Card className="p-6 bg-[#F8F8F8]">
+                <div className="space-y-6">
+                  {/* Header Section */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl font-semibold text-[#20152E]">
+                        Expertise: A Powerful Blend of E-commerce, AI, and SaaS Experience
+                      </h2>
+                      <p className="text-lg text-[#20152E]">
+                        Leveraging Deep Industry Knowledge to Drive TradeWizz's Success
+                      </p>
+                    </div>
+                    <p className="text-gray-600 max-w-3xl mx-auto">
+                      The TradeWizz team possesses a unique combination of expertise in e-commerce, artificial intelligence, and SaaS development, perfectly positioning the company to capitalize on the growing market opportunity and deliver exceptional value to its customers.
+                    </p>
+                  </div>
+
+                  {/* Expertise Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    {/* E-commerce Mastery */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <Store className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">E-commerce Mastery</h3>
+                          <p className="text-sm text-gray-600">
+                            Extensive experience in online retail, marketplace management, and digital marketing, with a proven track record of building and scaling successful e-commerce businesses. Ilhan has managed a $10 million turnover on Amazon, demonstrating expertise in scaling e-commerce operations.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* AI and Technology Leadership */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <Brain className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">AI and Technology Leadership</h3>
+                          <p className="text-sm text-gray-600">
+                            Deep technical expertise in artificial intelligence, machine learning, and cloud computing, enabling the development of cutting-edge solutions for e-commerce optimization. Ozan has 15 years of experience in software development, specializing in creating scalable and efficient systems.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* SaaS Development and Growth */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <Rocket className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">SaaS Development and Growth</h3>
+                          <p className="text-sm text-gray-600">
+                            Proven ability to build, launch, and scale SaaS products, with a focus on user experience, customer success, and recurring revenue models.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Marketing and Brand Building */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <Megaphone className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Marketing and Brand Building</h3>
+                          <p className="text-sm text-gray-600">
+                            Strong expertise in digital marketing, brand development, and customer acquisition, with a focus on driving growth and building brand awareness in the e-commerce space. Aydin has 6 years of experience in digital marketing, with a focus on customer acquisition and brand development.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Expertise Stats */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">E-commerce Revenue</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">$10M+</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Tech Experience</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">15 Years</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Marketing ROI</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">473%</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Projects Delivered</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">50+</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </TabsContent>
+
+            {/* Call to Action Tab */}
+            <TabsContent value="call-to-action" className="space-y-6">
+              {/* Investment Opportunity Section */}
+              <Card className="p-6 bg-[#F8F8F8]">
+                <div className="space-y-6">
+                  {/* Header Section */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl font-semibold text-[#20152E]">
+                        Investment Opportunity: Partner with TradeWizz and Shape the Future of E-commerce
+                      </h2>
+                      <p className="text-lg text-[#20152E]">
+                        Seeking $500K in Pre-Seed Funding to Accelerate Growth and Expand Platform Capabilities
+                      </p>
+                    </div>
+                    <p className="text-gray-600 max-w-3xl mx-auto">
+                      TradeWizz is seeking $500K in pre-seed funding to further develop its AI-powered platform, expand its team, and scale its customer acquisition efforts. This is an opportunity to invest in a high-growth e-commerce SaaS company with a unique value proposition and a strong potential for significant returns.
+                    </p>
+                  </div>
+
+                  {/* Key Investment Highlights */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Large and Growing Market */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <TrendingUp className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Large and Growing Market</h3>
+                          <p className="text-sm text-gray-600">
+                            Addressing a multi-billion dollar market with a solution that meets the evolving needs of e-commerce sellers.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Strong Early Traction */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <Trophy className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Strong Early Traction</h3>
+                          <p className="text-sm text-gray-600">
+                            Demonstrated product-market fit with 41 paying customers and a 19.51% trial-to-paid conversion rate in the MVP test phase.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Exceptional ROI Potential */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <DollarSign className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Exceptional ROI Potential</h3>
+                          <p className="text-sm text-gray-600">
+                            Achieved a 4.73x LTV:CAC ratio during the MVP test, indicating efficient customer acquisition and strong revenue potential.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Experienced and Dedicated Team */}
+                    <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-2 bg-[#4ADE80]/10 rounded-lg">
+                          <Users className="w-8 h-8 text-[#4ADE80]" />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-lg font-semibold text-[#20152E]">Experienced and Dedicated Team</h3>
+                          <p className="text-sm text-gray-600">
+                            Led by a team with deep expertise in e-commerce, AI, and SaaS, committed to driving innovation and growth.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Call to Action */}
+                  <div className="text-center space-y-6 mt-8">
+                    <div className="p-8 bg-white rounded-lg border border-gray-100 shadow-sm">
+                      <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-[#20152E]">
+                          Join us in empowering e-commerce businesses worldwide
+                        </h3>
+                        <p className="text-gray-600">
+                          Contact us to learn more about this exciting investment opportunity
+                        </p>
+                        <div className="space-y-2">
+                          <p className="text-sm text-gray-600">
+                            Email: <a href="mailto:aydin.yildirim@tradewizz.com" className="text-[#4ADE80] hover:underline">aydin.yildirim@tradewizz.com</a>
+                          </p>
+                          <p className="text-sm text-gray-600">
+                            Website: <a href="https://www.tradewizz.com" target="_blank" rel="noopener noreferrer" className="text-[#4ADE80] hover:underline">www.tradewizz.com</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Investment Stats */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Funding Goal</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">$500K</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">LTV:CAC Ratio</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">4.73x</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Conversion Rate</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">19.51%</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Paying Customers</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">41</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Next Steps Section */}
+              <Card className="p-6 bg-[#F8F8F8]">
+                <div className="space-y-6">
+                  {/* Header Section */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl font-semibold text-[#20152E]">
+                        Next Steps: Let's Discuss How TradeWizz Can Transform Your Portfolio
+                      </h2>
+                      <p className="text-lg text-[#20152E]">
+                        Taking the First Step Towards a Promising Partnership
+                      </p>
+                    </div>
+                    <p className="text-gray-600 max-w-3xl mx-auto">
+                      We believe TradeWizz represents a compelling investment opportunity in the rapidly growing e-commerce SaaS market. We invite you to explore this opportunity further and discuss how TradeWizz can become a valuable addition to your portfolio.
+                    </p>
+                  </div>
+
+                  {/* Invitation and Action Section */}
+                  <div className="bg-white rounded-lg border border-gray-100 shadow-sm p-8">
+                    <div className="max-w-2xl mx-auto space-y-6">
+                      <p className="text-gray-600 text-center">
+                        We are confident that TradeWizz has the potential to deliver exceptional returns. We are eager to share more detailed information, answer your questions, and discuss how we can work together to shape the future of e-commerce.
+                      </p>
+                      
+                      <div className="text-center space-y-2">
+                        <p className="text-[#20152E] font-medium">
+                          Schedule a meeting with our team to discuss the investment opportunity and learn more about our vision for TradeWizz.
+                        </p>
+                        <button className="px-8 py-3 bg-[#4ADE80] hover:bg-[#4ADE80]/90 text-white font-semibold rounded-lg transition-colors">
+                          Schedule a Meeting
+                        </button>
+                      </div>
+
+                      <div className="text-center pt-4 border-t">
+                        <p className="text-sm text-gray-600">
+                          Alternatively, download our detailed investor deck here:{' '}
+                          <a href="#" className="text-[#4ADE80] hover:underline font-medium">
+                            Download Investor Deck
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action Stats */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Investment Stage</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">Pre-Seed</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Minimum Investment</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">$50K</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Target Close</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">Q2 2024</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-gray-100">
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">Available Equity</p>
+                        <p className="text-2xl font-bold text-[#4ADE80]">15%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </TabsContent>
           </Tabs>
         </div>
       </div>
