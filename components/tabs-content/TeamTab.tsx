@@ -41,14 +41,14 @@ const TeamTab = () => {
           </div>
 
           {/* Team Members Grid */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {/* Team Member 1 */}
-            <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
+            <div className="p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
               <div className="flex flex-col items-center space-y-4">
                 <div className="relative w-[150px] h-[150px]">
                   <Image
-                    src="/tw-profile-photo-Ilhan.jpg"
-                    alt="Ilhan Sarigol"
+                    src="/tw-profile-photo-Onur.jpg"
+                    alt="Onur POLAT"
                     width={150}
                     height={150}
                     className="rounded-full object-cover border-2 border-[#4ADE80]/20"
@@ -56,28 +56,28 @@ const TeamTab = () => {
                 </div>
                 <div className="space-y-2 text-center">
                   <h3 className="text-lg font-semibold text-[#20152E]">
-                    Ilhan Sarigol
+                    Onur POLAT
                   </h3>
-                  <p className="text-[#4ADE80] font-medium">Founder & CEO</p>
+                  <p className="text-[#4ADE80] font-medium">Co-Founder</p>
                   <p className="text-sm text-gray-600">
-                    A serial entrepreneur with over 10 years of experience in
-                    the e-commerce industry. Ilhan brings extensive knowledge of
-                    online marketplaces, digital marketing, and business
-                    strategy. Proven track record in online retail, managing a
-                    $10 million turnover on Amazon, demonstrating expertise in
-                    scaling e-commerce operations.
+                    A seasoned software engineer and technology leader with
+                    expertise in AI, machine learning, and cloud computing. Onur
+                    is responsible for the development and implementation of the
+                    TradeWizz platform. 15 years of experience in software
+                    development, specializing in creating scalable and efficient
+                    systems.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Team Member 2 */}
-            <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
+            <div className="p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
               <div className="flex flex-col items-center space-y-4">
                 <div className="relative w-[150px] h-[150px]">
                   <Image
-                    src="/tw-profile-photo-Ozan.png"
-                    alt="Ozan Goren"
+                    src="/tw-profile-photo-Kadir.png"
+                    alt="Kadir ZEYREK"
                     width={150}
                     height={150}
                     className="rounded-full object-cover border-2 border-[#4ADE80]/20"
@@ -85,12 +85,12 @@ const TeamTab = () => {
                 </div>
                 <div className="space-y-2 text-center">
                   <h3 className="text-lg font-semibold text-[#20152E]">
-                    Ozan Goren
+                    Kadir ZEYREK
                   </h3>
-                  <p className="text-[#4ADE80] font-medium">Co-Founder & CTO</p>
+                  <p className="text-[#4ADE80] font-medium">Co-Founder</p>
                   <p className="text-sm text-gray-600">
                     A seasoned software engineer and technology leader with
-                    expertise in AI, machine learning, and cloud computing. Ozan
+                    expertise in AI, machine learning, and cloud computing. Kadir
                     is responsible for the development and implementation of the
                     TradeWizz platform. 15 years of experience in software
                     development, specializing in creating scalable and efficient
@@ -101,12 +101,12 @@ const TeamTab = () => {
             </div>
 
             {/* Team Member 3 */}
-            <div className="p-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
+            <div className="p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
               <div className="flex flex-col items-center space-y-4">
                 <div className="relative w-[150px] h-[150px]">
                   <Image
-                    src="/tw-profile-photo-Aydin.png"
-                    alt="Aydin Yildirim"
+                    src="/tw-profile-photo-Burak.png"
+                    alt="Burak Can POLAT"
                     width={150}
                     height={150}
                     className="rounded-full object-cover border-2 border-[#4ADE80]/20"
@@ -114,17 +114,45 @@ const TeamTab = () => {
                 </div>
                 <div className="space-y-2 text-center">
                   <h3 className="text-lg font-semibold text-[#20152E]">
-                    Aydin Yildirim
+                    Burak Can POLAT
                   </h3>
-                  <p className="text-[#4ADE80] font-medium">
-                    Head of Marketing
-                  </p>
+                  <p className="text-[#4ADE80] font-medium">Co-Founder</p>
                   <p className="text-sm text-gray-600">
-                    A digital marketing expert with a proven track record of
-                    driving customer acquisition and brand growth. Aydin leads
-                    TradeWizz's marketing and sales strategies. 6 years of
-                    experience in digital marketing, with a focus on customer
-                    acquisition and brand development.
+                    A seasoned software engineer and technology leader with
+                    expertise in AI, machine learning, and cloud computing. Burak
+                    is responsible for the development and implementation of the
+                    TradeWizz platform. 15 years of experience in software
+                    development, specializing in creating scalable and efficient
+                    systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Team Member 4 */}
+            <div className="p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-shadow hover:shadow-md">
+              <div className="flex flex-col items-center space-y-4">
+                <div className="relative w-[150px] h-[150px]">
+                  <Image
+                    src="/tw-profile-photo-Ramazan.png"
+                    alt="Ramazan SEYHAN"
+                    width={150}
+                    height={150}
+                    className="rounded-full object-cover border-2 border-[#4ADE80]/20"
+                  />
+                </div>
+                <div className="space-y-2 text-center">
+                  <h3 className="text-lg font-semibold text-[#20152E]">
+                    Ramazan SEYHAN
+                  </h3>
+                  <p className="text-[#4ADE80] font-medium">Co-Founder</p>
+                  <p className="text-sm text-gray-600">
+                    A seasoned software engineer and technology leader with
+                    expertise in AI, machine learning, and cloud computing. Ramazan
+                    is responsible for the development and implementation of the
+                    TradeWizz platform. 15 years of experience in software
+                    development, specializing in creating scalable and efficient
+                    systems.
                   </p>
                 </div>
               </div>
