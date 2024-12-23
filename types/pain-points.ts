@@ -1,11 +1,11 @@
-import { IconType } from "lucide-react";
+import { LucideIcon } from 'lucide-react';
 
 export interface PainPoint {
   id: string;
   title: string;
+  subtitle: string;
   description: string;
-  icon: IconType;
-  sources: string[];
+  icon: LucideIcon;
 }
 
 export interface PainPointSectionProps {
@@ -13,6 +13,6 @@ export interface PainPointSectionProps {
   showSources?: boolean;
 }
 
-export interface PainPointCardProps extends PainPoint {
+export interface PainPointCardProps extends Omit<PainPoint, 'id'> {
   className?: string;
 } 

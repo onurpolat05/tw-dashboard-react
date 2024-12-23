@@ -5,6 +5,7 @@ import { PainPointCardProps } from "@/types/pain-points";
 
 const PainPointCard: React.FC<PainPointCardProps> = ({
   title,
+  subtitle,
   description,
   icon: Icon,
   className
@@ -15,13 +16,17 @@ const PainPointCard: React.FC<PainPointCardProps> = ({
       className
     )}>
       <div className="space-y-3">
-        <div className="flex gap-3 items-center">
-          <div className="p-2 bg-violet-50 rounded-lg">
-            <Icon className="w-5 h-5 text-violet-600 shrink-0" />
+        <div className="space-y-2">
+          <div className="flex gap-3 items-center">
+            <div className="p-2 bg-violet-50 rounded-lg">
+              <Icon className="w-5 h-5 text-violet-600 shrink-0" />
+            </div>
+            <h3 className="text-xl font-bold leading-tight text-gray-900">{title}</h3>
           </div>
-          <h3 className="text-xl font-bold leading-tight text-gray-900">{title}</h3>
+          <p className="text-sm font-medium text-violet-600 pl-[44px]">
+            {subtitle}
+          </p>
         </div>
-
         <p className="text-base leading-relaxed text-gray-600 pl-[44px]">{description}</p>
       </div>
     </Card>

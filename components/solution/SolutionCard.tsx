@@ -5,10 +5,10 @@ import { SolutionCardProps } from "@/types/solution";
 
 const SolutionCard: React.FC<SolutionCardProps> = ({
   title,
+  subtitle,
   description,
   icon: Icon,
-  className,
-  painPointTitle
+  className
 }) => {
   return (
     <Card className={cn(
@@ -23,11 +23,9 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
             </div>
             <h3 className="text-xl font-bold leading-tight text-gray-900">{title}</h3>
           </div>
-          {painPointTitle && (
-            <p className="text-sm text-green-600 font-medium pl-[44px]">
-              Solves: {painPointTitle}
-            </p>
-          )}
+          <p className="text-sm font-medium text-green-600 pl-[44px]">
+            {subtitle}
+          </p>
         </div>
         <p className="text-base leading-relaxed text-gray-600 pl-[44px]">{description}</p>
       </div>
